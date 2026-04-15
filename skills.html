@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Macondo&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik+Storm&family=Sono:wght,MONO@200..800,1&family=Tagesschrift&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        background-color: #c49b63;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+    nav {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .logo {
+        color: #c49b63;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li {
+        margin-left: 25px;
+    }
+    nav ul li a {
+       text-decoration: none; 
+       color: #c49b63;
+       font-size: 18px;
+       transition: color 0.3 ease;
+       position: relative;
+       padding-bottom: 5px;
+       display: inline-block;
+    }
+    nav ul li a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #c49b63;
+        transition: width 0.3s ease;
+    }
+    nav ul li a:hover {
+        color: #c49b63;
+    }
+    nav ul li a:hover::after {
+        width: 100%;
+    }
+    .self-improvment {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        min-height: 80vh;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 0 auto;
+        padding: 30px;
+        padding-top: 100px;
+       
+    }
+    .self-improvment img {
+        height: 420px;
+        width: auto;
+        border-radius:5px ;
+        margin-right: 20px;
+        margin-bottom: 15px;
+        object-fit: cover;
+        order: 2;
+    }
+    h2 {
+        font-size: 2.5rem;
+        margin-top: -30px;
+    }
+    p {
+        font-size: 17px;
+        letter-spacing: 1px;
+
+    }
+    .text {
+        flex: 1;
+        border-left: 3px solid black;
+        padding-left: 30px;
+    }
+    .time img {
+        height: auto;
+        width: 300px;
+        border-radius: 5px;
+    }
+    .time {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        min-height: 80vh;
+        margin:  0 auto; 
+        gap: 50px;
+        padding: 0 auto;
+        padding-top: -80px;
+        margin-bottom: 0;
+    }
+    .time h2 {
+        font-size: 3rem;
+    }
+    .time p {
+        line-height: 1.8;
+        font-size: 19px;
+    }
+    .prog {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        min-height: 80vh;
+        margin:  0 auto; 
+        gap: 50px;
+        padding: 0 auto;
+        margin-top: -15px;
+    }
+    .prog h2 {
+        font-size: 2.5rem;
+    }
+    .prog p {
+        line-height: 1.8;
+        font-size: 18px;
+    }
+    .prog img {
+        height: 300px;
+        width: auto;
+        border-radius: 5px;
+        object-fit: cover;
+        order: 2;
+    }
+</style>
+<body>
+    <nav>
+        <div class="logo">
+            Ahmed Bahri
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+            
+        </ul>
+    </nav>
+    <div class="self-improvment">
+        <img src="./assets/WhatsApp Image 2026-03-29 at 6.52.26 AM (1).jpeg">
+        <div class="text">
+        <h2>Self-Development</h2>
+        <p>I started my self-development journey around three years ago,
+            when I became intersted in improving myself and building better habits.
+            Since then, I have been consistently learning through books and podcasts.
+            So far, I have read 15+ books and listened to more than 100 podcasts focusing on personal growth,
+            discipline and mindset.</p>
+            
+           <p> Through this journey, I have developed strong self-discipline
+             and a deeper understanding of my strenghs.
+            I am continuously improving my consistency and focus.</p>
+            
+           <p> My goal for 2026 is to read at least 15 books and listen to over 300 podcasts,
+            continuing to expand my knowledge and grow both personally and mentally.</p>
+            
+           <p> I believe that self-development is a lifelong process,
+            and I am committed to becoming a better version of myself every day.</p>
+        </p>
+        </div>
+    </div>
+    <div class="time">
+        <img src="./assets/nathan-dumlao-5Hl5reICevY-unsplash.jpg" alt="time clock" >
+        <div class="text">
+            <h2>
+                Time Management
+            </h2>
+            <p>
+                I have strong time management skills that help me stay organized and productive in my daily tasks.
+                I am able to priortize my work effectively and focus on what matters most.
+                I use planning techniques to manage deadlines and avoid unnecessary stress.
+                I always try to balance between work, learning and personal time.
+                These skills help me stay consistent and achieve my goals efficiently.
+                I am continuously improving my ability to manage time better and work smarter.
+            </p>
+
+        </div>
+    </div>
+    <div class="prog">
+        <img src="./assets/Web development essentials in golden glow.png" alt="html & css" >
+        <div class="text">
+            <h2>
+                Html & CSS
+            </h2>
+            <p>
+                I have over two years of experience working with HTML and CSS,
+                 including completing a dedicated course.
+                  I am confident in building responsive, well-structured, and visually appealing web pages.
+                   I pay strong attention to detail in design and layout
+                    and I enjoy continuously improving my front-end development 
+                    skills alongside my engineering studies.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

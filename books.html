@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Macondo&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik+Storm&family=Sono:wght,MONO@200..800,1&family=Tagesschrift&display=swap" rel="stylesheet">
+</head>
+<style>
+        body{
+        background-color: #c49b63;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+    nav {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+    .logo {
+        color: #c49b63;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li {
+        margin-left: 25px;
+    }
+    nav ul li a {
+       text-decoration: none; 
+       color: #c49b63;
+       font-size: 18px;
+       transition: color 0.3 ease;
+       position: relative;
+       padding-bottom: 5px;
+       display: inline-block;
+    }
+    nav ul li a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #c49b63;
+        transition: width 0.3s ease;
+    }
+    nav ul li a:hover {
+        color: #c49b63;
+    }
+    nav ul li a:hover::after {
+        width: 100%;
+    }
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+.library-section {
+    padding: 60px 20px;
+    background-color: #c49b63; 
+    direction: ltr;
+    font-family: 'Poppins', sans-serif; 
+    padding-top: 80px;
+}
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 3.5rem;
+    color: black; 
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    position: relative;
+}
+.section-heading::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: black;
+    margin: 15px auto 0;
+}
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.book-card {
+    background-color: #000000; 
+    border-radius: 12px;
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.4); 
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.book-card:hover {
+    transform: translateY(-10px);
+}
+.category {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #5d4037; 
+    color: #f3e5ab; 
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 4px 14px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.book-icon {
+    font-size: 3.8rem;
+    margin-bottom: 25px;
+    display: block;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+}
+.book-card h3 {
+    font-size: 1.15rem;
+    color: wheat; 
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: 600;
+    min-height: 55px; 
+    font-family: 'Poppins', sans-serif;
+}
+.book-card p {
+    font-size: 0.95rem;
+    color: #a1887f; 
+    margin: 0;
+    font-weight: 400;
+    font-style: italic;
+}
+.book-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #c49b63; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease;
+}
+.book-card:hover::before {
+    transform: scaleX(1); 
+}
+</style>
+<body>
+    <nav>
+        <div class="logo">
+            Ahmed Bahri
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="library-section">
+    <h2 class="section-heading">My Personal Library</h2>
+    <div class="books-grid">
+        <div class="book-card">
+            <span class="category">Growth</span>
+            <div class="book-icon">📘</div>
+            <h3>The 7 Habits of Highly Effective Teens</h3>
+            <p>Sean Covey</p>
+        </div>
+        <div class="book-card">
+            <span class="category">Psychology</span>
+            <div class="book-icon">🧠</div>
+            <h3>The Power of Your Subconscious Mind</h3>
+            <p>Joseph Murphy</p>
+        </div>
+        <div class="book-card">
+            <span class="category">Growth</span>
+            <div class="book-icon">📈</div>
+            <h3>The 7 Habits of Highly Effective People</h3>
+            <p>Stephen Covey</p>
+        </div>
+        <div class="book-card">
+            <span class="category">Productivity</span>
+            <div class="book-icon">🌅</div>
+            <h3>The 5 AM Club</h3>
+            <p>Robin Sharma</p>
+        </div>
+        <div class="book-card">
+            <span class="category">Productivity</span>
+            <div class="book-icon">✨</div>
+            <h3>The Miracle Morning</h3>
+            <p>Hal Elrod</p>
+        </div>
+        <div class="book-card">
+            <span class="category">Finance</span>
+            <div class="book-icon">💰</div>
+            <h3>Rich Dad Poor Dad</h3>
+            <p>Robert Kiyosaki</p>
+        </div>
+        <div class="book-card">
+            <span class="category">Communication</span>
+            <div class="book-icon">👁️</div>
+            <h3>The Art of Reading Minds</h3>
+            <p>Henrik Fexeus</p>
+        </div>
+        <div class="book-card">
+            <span class="category">Habits</span>
+            <div class="book-icon">⚛️</div>
+            <h3>Atomic Habits</h3>
+            <p>James Clear</p>
+        </div>
+        <div class="book-card">
+            <span class="category">Finance</span>
+            <div class="book-icon">💎</div>
+            <h3>Think and Grow Rich</h3>
+            <p>Napoleon Hill</p>
+        </div>
+        <div class="book-card">
+            <span class="category">Finance</span>
+            <div class="book-icon">🚀</div>
+            <h3>The Seven Secrets of Rapid Wealth</h3>
+            <p>Amaar Omar</p>
+        </div>
+        <div class="book-card">
+            <span class="category">Growth</span>
+            <div class="book-icon">🔍</div>
+            <h3>How to Find Yourself</h3>
+            <p>Nick Trenton</p>
+        </div>
+        <div class="book-card">
+            <span class="category">Relationships</span>
+            <div class="book-icon">😊</div>
+            <h3>Be the Person Who Makes You Happy</h3>
+            <p>Paulo Coelho</p>
+        </div>
+        <div class="book-card">
+            <span class="category">Focus</span>
+            <div class="book-icon">🎯</div>
+            <h3>The Art of Focus and Achievement</h3>
+            <p>Damon Zahariades</p>
+        </div>
+        <div class="book-card">
+            <span class="category">Productivity</span>
+            <div class="book-icon">📅</div>
+            <h3>Morning Makeover</h3>
+            <p>Damon Zahariades</p>
+        </div>
+        <div class="book-card">
+            <span class="category">Learning</span>
+            <div class="book-icon">⏱️</div>
+            <h3>The First 20 Hours</h3>
+            <p>Josh Kaufman</p>
+        </div>
+        <div class="book-card">
+            <span class="category">Habits</span>
+            <div class="book-icon">⚙️</div>
+            <h3>The Power of Habit</h3>
+            <p>Charles Duhigg</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

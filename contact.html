@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Macondo&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik+Storm&family=Sono:wght,MONO@200..800,1&family=Tagesschrift&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<style>
+    body{
+        background-color: #c49b63;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 1.7;
+    }
+    nav {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .logo {
+        color: #c49b63;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li {
+        margin-left: 25px;
+    }
+    nav ul li a {
+       text-decoration: none; 
+       color: #c49b63;
+       font-size: 18px;
+       transition: color 0.3 ease;
+       position: relative;
+       padding-bottom: 5px;
+       display: inline-block;
+    }
+    nav ul li a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #c49b63;
+        transition: width 0.3s ease;
+    }
+    nav ul li a:hover {
+        color: #c49b63;
+    }
+    nav ul li a:hover::after {
+        width: 100%;
+    }
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 85vh;
+        padding: 50px;
+        letter-spacing: 2px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        max-width: 1000px;
+        border-left: 7px solid black;
+        padding-left: 20px;
+        margin-left: -200px;
+    }
+    .contact-text {
+        flex:1;
+    }
+    .social-links {
+        list-style: none;
+        padding:0;
+        display: flex;
+        gap: 50px;
+        margin-bottom: 20px;
+    }
+    .social-links li {
+        margin-bottom: 15px;
+        font-size: 1.1rem;
+    }
+    .social-links a {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 2rem;
+    }
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 18px;
+    }
+</style>
+<body>
+    <nav>
+        <div class="logo">
+            Ahmed Bahri
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+    </nav>
+    <div class="contact">
+       
+        <div class="content">
+        <div class="contact-text"></div>
+        <h1>Get In Touch</h1>
+        <h3>Contact ME</h3>
+        <p>If you are interested in connecting with me, feel free to reach out through any of the platforms below.
+            I'm always open to discussing new projects or creative ideas!
+        </p>
+        <ul class="social-links">
+            <li><a href="https://www.facebook.com/ahmed.taeser.3/" target="_blank" rel="noopener noreferrer" ><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/a7tb_1/" target="_blank" rel="noopener noreferrer" ><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://wa.me/201112983075" target="_blank" rel="noopener noreferrer" ><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href="mailto:ahmedteaser12@gmail.com" target="_blank" rel="noopener noreferrer" ><i class="fa-solid fa-at"></i></a></li>
+            <li><a href="https://www.tiktok.com/@ahmed_tayser_12" target="_blank" rel="noopener noreferrer" ><i class="fa-brands fa-tiktok"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/ahmed-bahri-6145763a7?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" ><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://www.snapchat.com/add/ahmed_tayserr" target="_blank" rel="noopener noreferrer" ><i class="fa-brands fa-snapchat"></i></a></li>
+        </ul>
+        </div>
+    </div>
+</body>
+</html>
